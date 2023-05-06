@@ -19,15 +19,15 @@ body{
 }
 
 .container{
-    width: 40%;
-    top: 30%;
-    left: 50%;
+    width:40%;
+    top:30%;
+    left:50%;
     background: white;
     border-radius: 1px;
     min-width: 450px;
-    position: absolute;
-    min-height: 100px;
-    transform: translate(-50%,-50%);
+    position:absolute;
+    min-height:100px;
+    transform:translate(-50%,-50%);
 }
 
 #newtask input{
@@ -46,7 +46,7 @@ body{
 
 #newtask input:focus{
     outline:none;
-    border-color: #0F62FE;
+    border-color: #0D75EC;
 }
 
 #newtask button{
@@ -54,11 +54,10 @@ body{
     float: right;
     font-weight: 500;
     font-size: 16px;
-    background-color: #33B1FF;
+    background-color: #0F62FE;
+;
 
-    ;
-
-    border: none;
+border: none;
     color:azure;
     cursor: pointer;
     outline: none;
@@ -74,8 +73,6 @@ body{
     max-height: 300px;
 }
 
-
-
 .tasks::-webkit-scrollbar {
     width: 10px;
 }
@@ -88,4 +85,60 @@ body{
 .tasks::-webkit-scrollbar-thumb {
     background: #0D75EC;
     border-radius: 25px;
+}
+
+.tasks{
+    position: absolute;
+    border-radius: 0px;
+    width: 100%;
+    
+    background-color: aliceblue;
+    padding: 30px 20px;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+
+.task{
+    border-radius:  5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 10px 10px;
+    display: flex;
+    width: 100%;
+}
+
+.delete{
+    right: -5px;
+    padding: 5px 5px;
+    background:#BAE6FF;
+    border-radius: 4px;
+    transform-origin: top right;
+    box-shadow: 0 0 6px black(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+#check-task{ 
+    margin-right: 20px;
+}
+
+.task label{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.task label p.checked{
+    text-decoration: line-through;
 }
