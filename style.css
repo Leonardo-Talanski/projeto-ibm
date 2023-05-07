@@ -136,7 +136,6 @@ body{
                 display: flex;
                 align-items: flex-start;
                }
-
                .task label p.checked {
                 text-decoration: line-through;
                }
