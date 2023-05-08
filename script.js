@@ -1,7 +1,9 @@
 
 //constants declared for input button and task list area
 const taskInput = document.querySelector("#newtask input");
+console.log(taskInput)
 const taskSection = document.querySelector('.tasks');
+console.log(taskSection)
 //listener for the Enter Key. Used to add a new task.
 taskInput.addEventListener("keyup", (e) => {
     if (e.key == "Enter") {createTask(); } } );
